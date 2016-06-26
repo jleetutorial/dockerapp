@@ -1,8 +1,15 @@
+lb:
+  extends:
+    file: common.yml
+    service: lb
+  links:
+    - dockerapp
+
 dockerapp:
   extends:
     file: common.yml
     service: dockerapp
-  image: jleetutorial/dockerapp
+  image: jleetutorial/dockerapp 
   links:
     - redis
 

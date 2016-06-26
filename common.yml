@@ -1,5 +1,9 @@
+lb:
+  image: dockercloud/haproxy
+  ports:
+     - 80:80
 dockerapp:
   ports:
-    - "5000:5000"
+    - 5000
 redis:
   image: redis:3.2.0
