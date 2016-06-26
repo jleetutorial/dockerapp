@@ -1,0 +1,9 @@
+version: '2'
+services:
+  dockerapp:
+    image: jleetutorial/dockerapp
+    ports:
+      - "5000:5000"
+
+  redis:
+    image: redis:3.2.0
