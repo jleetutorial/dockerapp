@@ -1,9 +1,12 @@
 version: '2'
 services:
   dockerapp:
+    extends:
+      file: common.yml
+      service: dockerapp
     image: jleetutorial/dockerapp
-    ports:
-      - "5000:5000"
 
   redis:
-    image: redis:3.2.0
+    extends:
+      file: common.yml
+      service: redis
