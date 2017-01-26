@@ -1,3 +1,3 @@
 # dockerapp
 
-successfully built in circleCI :)
+successfully built in circleCI
