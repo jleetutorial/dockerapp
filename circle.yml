@@ -6,9 +6,9 @@ machine:
 
 dependencies:
   pre:
-    - sudo pip install docker-compose
+    - sudo pip install docker-compose==1.8.1
 
 test:
   override:
     - docker-compose up -d
-    - docker-compose run dockerapp python test.py
+    - docker-compose run dockerapp-1 python test.py
