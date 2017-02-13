@@ -20,8 +20,8 @@ deployment:
     commands:
       - docker login -e $DOCKER_HUB_EMAIL -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
       - docker images
-      - docker tag b4e8a1cda8f7 $DOCKER_HUB_USER_ID/dockerapp-1:$CIRCLE_SHA1
-      - docker tag b4e8a1cda8f7 $DOCKER_HUB_USER_ID/dockerapp-1:latest
+      - docker tag a81b55a84fdf $DOCKER_HUB_USER_ID/dockerapp-1:$CIRCLE_SHA1
+      - docker tag a81b55a84fdf $DOCKER_HUB_USER_ID/dockerapp-1:latest
       - docker push https://hub.docker.com/r/$DOCKER_HUB_USER_ID/dockerapp-1:$CIRCLE_SHA1
       - docker push https://hub.docker.com/r/$DOCKER_HUB_USER_ID/dockerapp-1:latest
 
