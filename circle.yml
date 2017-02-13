@@ -22,6 +22,6 @@ deployment:
       - docker images
       - docker tag dockerapp1_dockerapp-1 $DOCKER_HUB_USER_ID/dockerapp-1:$CIRCLE_SHA1
       - docker tag dockerapp1_dockerapp-1 $DOCKER_HUB_USER_ID/dockerapp-1:latest
-      - docker push https://hub.docker.com/r/$DOCKER_HUB_USER_ID/dockerapp-1:$CIRCLE_SHA1
-      - docker push https://hub.docker.com/r/$DOCKER_HUB_USER_ID/dockerapp-1:latest
+      - docker push $DOCKER_HUB_USER_ID/dockerapp-1:$CIRCLE_SHA1
+      - docker push $DOCKER_HUB_USER_ID/dockerapp-1:latest
 
