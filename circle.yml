@@ -6,7 +6,7 @@ machine:
 
 dependencies:
   pre:
-    - sudo pip install docker-compose
+    - sudo pip install docker-compose==1.9.0
 
 test:
   override:
