@@ -5,7 +5,8 @@ services:
       file: common.yml
       service: dockerapp
     image: jleetutorial/dockerapp
-
+    depends_on:
+      - redis
   redis:
     extends:
       file: common.yml

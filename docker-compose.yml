@@ -1,11 +1,12 @@
-version: '2'
+version: "3.0"
 services:
   dockerapp:
     extends:
       file: common.yml
       service: dockerapp
     build: .
-
+    depends_on:
+      - redis
   redis:
     extends:
       file: common.yml
