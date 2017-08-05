@@ -1,0 +1,22 @@
+version: 2
+jobs:
+  build:
+    working_directory: /dockerapp
+    docker:
+      - image: docker:17.05.0-ce-git
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Install dependencies
+          command: |
+            apk add --no-cache \
+              py-pip=9.0.0-r1
+            pip install \
+              docker-compose==1.12.0 \
+              awscli==1.11.76
+      - run:
+          name: Run tests
+          command: |
+            docker-compose up -d
+            docker-compose run dockerapp python test.py
