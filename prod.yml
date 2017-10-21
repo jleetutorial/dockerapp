@@ -1,4 +1,4 @@
-version: '3.0'
+version: "3.0"
 services:
   dockerapp:
     image: jleetutorial/dockerapp
@@ -6,6 +6,5 @@ services:
       - "5000:5000"
     depends_on:
       - redis
-
   redis:
     image: redis:3.2.0
