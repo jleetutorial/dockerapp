@@ -1,6 +1,6 @@
 # dockerapp
 Project source code for James Lee's Docker course.
 
-Check out the full list of DevOps and Big Data courses that James and Tao teach.
+Check out our latest DevOps PDF book.
 
-https://www.level-up.one/courses/
+https://www.level-up.one/devops-pdf-book/
